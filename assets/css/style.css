@@ -15,6 +15,7 @@ p {
     margin: 0;
     padding: 0;
     font-family: 'monty';
+    color: #fff;
 }
 
 header {
@@ -117,15 +118,64 @@ ul li.active a {
 .pangobian {
     font-family: 'pangobian';
 }
-@media only screen and (max-width: 1112px) {
+
+.info{
+    position: absolute;
+    top: 20%;
+    max-width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.content2{
+    display: inline-block;
+}
+.shipimg{
+    position: relative;
+    max-width: 400px;
+    display: inline-block;
+    float: right;
+    padding-left: 35px;
+}
+.wimage p {
+    max-width: 400px;
+}
+.forfun{
+    position: relative;
+    width: 900px;
+}
+
+@media only screen and (max-width: 1120px) {
     * {
         visibility: hidden;
+        overflow: hidden;
+        background-color: #000;
     }
 
     header {
         visibility: visible;
         background-color: #000;
         background-image: url("../nosupport.gif");
+
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-height: 665px) {
+
+    * {
+        visibility: hidden;
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    header {
+        visibility: visible;
+        background-color: #000;
+        background-image: url("../nosupport2.gif");
 
         height: 100vh;
         background-size: contain;
