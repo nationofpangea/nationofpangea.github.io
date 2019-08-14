@@ -172,7 +172,7 @@ ul li.active a {
     }
 }
 
-@media only screen and (max-height: 665px) {
+@media only screen and (max-height: 500px) {
 
     * {
         visibility: hidden;
