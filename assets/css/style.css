@@ -18,15 +18,21 @@ p {
     color: #fff;
     line-height: 1.55em;
 }
-
-header {
+body{
     background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../cover.jpg");
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+url("../cover.jpg");
+}
+header {
+    
+    
 
     height: 100vh;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
+
 }
 
 ul {
@@ -134,8 +140,9 @@ ul li.active a {
 .shipimg{
     position: relative;
     max-width: 400px;
+    height: 32vh;
     display: inline-block;
-    float: right;
+    float: top;
     padding-left: 35px;
 }
 .wimage p {
