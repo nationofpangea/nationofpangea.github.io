@@ -1,102 +1,135 @@
-       p {
-           color: #fff;
-       }
 
-       * {
-           margin: 0;
-           padding: 0;
-           font-family: Century Gothic;
-       }
 
-       header {
-           background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(logo.jpg);
-           background-color: black;
-           height: 100vh;
-           background-size: cover;
-           background-position: center;
-       }
+@font-face {
+    font-family: 'monty';
+    src: url('../MontserratAlternates-Regular.ttf');
+}
 
-       ul {
-           float: right;
-           list-style-type: none;
-           margin-top: 25px;
+p {
+    color: #fff;
+}
 
-       }
 
-       ul li {
-           display: inline-block;
-           margin-right: 10px;
-       }
+* {
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    font-family: 'monty';
+}
 
-       ul li a {
-           text-decoration: none;
-           color: #fff;
-           padding: 5px 20px;
-           border: 1px solid transparent;
-           transition: 0.6s ease;
-       }
+header {
+    background-color: #000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("../cover.jpg");
 
-       ul li a:hover {
-           background-color: #fff;
-           color: #000;
-       }
+    height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-       ul li.active a {
-           background-color: #fff;
-           color: #000;
-       }
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+    padding-top: 18px;
 
-       .logo img {
-           float: left;
-           width: 150px;
-           height: auto;
-       }
+}
 
-       .main {
-           max-width: 1200px;
-           margin: auto;
-       }
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
 
-       .title {
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-       }
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
 
-       .title h1 {
-           color: #fff;
-           font-size: 70px;
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
 
-       }
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
 
-       .button {
-           position: absolute;
-           top: 62%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-       }
+.logo img {
+    float: left;
+    width: auto;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
 
-       .btn {
-           border: 1px solid #fff;
-           padding: 10px 30px;
-           color: #fff;
-           text-decoration: none;
-           transition: 0.6s ease;
-       }
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
 
-       .btn:hover {
-           background-color: #fff;
-           color: #000;
-       }
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
 
-       @font-face {
-           font-family: 'pangobian';
-           src: url('../Pangobian-Regular.otf');
-       }
+.title h1 {
+    color: #fff;
+    font-size: 70px;
 
-       .pangobian {
-           font-family: 'pangobian',
-               Fallback,
-               sans-serif;
-       }
+}
+
+.button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.first {
+    margin-right: 30px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@font-face {
+    font-family: 'pangobian';
+    src: url('../Pangobian-Regular.otf');
+}
+
+.pangobian {
+    font-family: 'pangobian';
+}
+@media only screen and (max-width: 1112px) {
+    * {
+        visibility: hidden;
+    }
+
+    header {
+        visibility: visible;
+        background-color: #000;
+        background-image: url("../nosupport.gif");
+
+        height: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
